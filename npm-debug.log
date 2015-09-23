@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gulp-notify-send' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'gulp-notify-send', null ]
+7 verbose cache add name=undefined spec="gulp-notify-send" args=["gulp-notify-send",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'gulp-notify-send',
+8 verbose parsed url   path: 'gulp-notify-send',
+8 verbose parsed url   href: 'gulp-notify-send' }
+9 silly lockFile ccc230aa-gulp-notify-send gulp-notify-send
+10 verbose lock gulp-notify-send /home/vagrant/.npm/ccc230aa-gulp-notify-send.lock
+11 silly lockFile ccc230aa-gulp-notify-send gulp-notify-send
+12 silly lockFile ccc230aa-gulp-notify-send gulp-notify-send
+13 verbose addNamed [ 'gulp-notify-send', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile b3fda2ca-gulp-notify-send gulp-notify-send@
+16 verbose lock gulp-notify-send@ /home/vagrant/.npm/b3fda2ca-gulp-notify-send.lock
+17 silly addNameRange { name: 'gulp-notify-send', range: '*', hasData: false }
+18 verbose request where is /gulp-notify-send
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id 62efb5c2a0db1bdd
+21 verbose url raw /gulp-notify-send
+22 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-notify-send' ]
+23 verbose url resolved https://registry.npmjs.org/gulp-notify-send
+24 verbose request where is https://registry.npmjs.org/gulp-notify-send
+25 info trying registry request attempt 1 at 22:47:03
+26 http GET https://registry.npmjs.org/gulp-notify-send
+27 http 404 https://registry.npmjs.org/gulp-notify-send
+28 silly registry.get cb [ 404,
+28 silly registry.get   { 'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '2',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     date: 'Tue, 22 Sep 2015 22:47:04 GMT',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     connection: 'keep-alive',
+28 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1442962023.639083,VS0,VE673' } ]
+29 silly lockFile b3fda2ca-gulp-notify-send gulp-notify-send@
+30 silly lockFile b3fda2ca-gulp-notify-send gulp-notify-send@
+31 error 404 Not Found
+31 error 404
+31 error 404 'gulp-notify-send' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Linux 3.13.0-24-generic
+33 error command "/usr/bin/node" "/usr/bin/npm" "install" "--save-dev" "gulp-notify-send"
+34 error cwd /home/vagrant/Projects/todo
+35 error node -v v0.10.37
+36 error npm -v 1.4.28
+37 error code E404
+38 verbose exit [ 1, true ]
