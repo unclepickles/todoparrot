@@ -16,6 +16,8 @@ class Todolist extends Model
         'name' => 'required',
         'description' => 'required'
     ];
+
+    protected $dates = ['deleted_at'];
     /**
      * @return string
      */
@@ -44,5 +46,18 @@ class Todolist extends Model
         if($v->passes()) return true;
         $this->errors = $v->message();
         return false;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function categories()
+    {
+        return $this->belongsTo('todoparrot\Category')->withTimestamps();
+    }
+
+    public function comments()
+    {
+        return $this->morphMany('\todoparrot\Comment', 'commentable');
     }
 }

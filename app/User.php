@@ -50,4 +50,11 @@ class User extends Model implements AuthenticatableContract,
     {
         $this->attributes['password'] = \Hash::make($password);
     }
+
+    public function profile()
+    {
+        return $this->hasOne('todoparrot\Profile');
+    }
+
+
 }

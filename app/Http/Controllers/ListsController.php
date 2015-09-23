@@ -16,7 +16,7 @@ class ListsController extends Controller
      */
     public function index()
     {
-        $lists = Todolist::orderBy('name', 'DESC')->get();
+        $lists = Todolist::orderBy('name', 'DESC')->paginate(10);
         return view('lists.index',compact('lists'));
     }
 
@@ -84,6 +84,12 @@ class ListsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Todolist::destroy($id);
+        return \Redirect::route('lists.index');
+    }
+
+    public function setSlugAttribute($name)
+    {
+        $this->slug = str_slug($this->name, "-");
     }
 }
